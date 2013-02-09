@@ -1,0 +1,34 @@
+
+#modal_container
+  position: fixed
+  display: none
+  top: 0
+  z-index: 3
+
+  .modal-content
+    display: none
+    position: fixed
+    height: 600px
+    width: 800px
+
+  #modal_background
+    background-color: #000000
+    opacity: 0.8
+    height: 100%
+    width: 100%
+
+  #modal_close 
+    background: url( "../img/close_buton.png" ) #0051a4
+    border: 2px solid
+    border-radius: 8px
+    height: 40px
+    width: 40px
+    margin: 8px
+    position: fixed
+    top: 0
+    right: 0
+    cursor: pointer
+  
+    &:hover 
+      background-color: $main-color
+      background-position: -40px 0

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<level>
+	<width>2048</width>
+	<height>600</height>
+    <title>Beware of the dwarf</title>
+    <nextLevel>Level_05</nextLevel>
+	<background>level_back</background>
+	
+	<scroller>
+        <scrollX>0</scrollX>
+        <scrollY>0</scrollY>
+    </scroller>
+    
+	<objects>
+		<object>
+			<className>ExitDoor</className>
+			<x>1958</x>
+			<y>512</y>
+		</object>
+	
+        <object>
+            <className>PinocchioObject</className>
+            <x>100</x>
+            <y>504</y>
+        </object>
+    
+		<object>
+			<className>DwarfObject</className>
+			<x>1024</x>
+			<y>470</y>
+		</object>
+
+        <object>
+			<className>UturnTrigger</className>
+			<width>20</width>
+			<height>20</height>
+			<x>512</x>
+			<y>540</y>
+		</object>
+        
+        <object>
+			<className>UturnTrigger</className>
+			<width>20</width>
+			<height>20</height>
+			<x>1536</x>
+			<y>540</y>
+		</object>
+		
+		<!-- Floor -->
+		<object>
+			<className>GroundObject</className>
+			<width>2048</width>
+			<height>40</height>
+			<x>0</x>
+			<y>560</y>
+		</object>
+		
+		<!-- Left Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>600</height>
+			<x>0</x>
+			<y>0</y>
+            <xFlip>true</xFlip>
+		</object>
+		
+		<!-- Right Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>600</height>
+			<x>2008</x>
+			<y>0</y>
+		</object>
+        		
+        <!-- Roof -->
+		<object>
+			<className>GroundObject</className>
+			<width>2048</width>
+			<height>120</height>
+			<x>0</x>
+			<y>0</y>
+            <yFlip>true</yFlip>
+		</object>
+	</objects>
+	
+</level>

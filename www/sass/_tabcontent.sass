@@ -1,0 +1,63 @@
+$tab-transition: left 0.5s ease-in-out
+
+.content 
+  background-color: #fff 
+  text-align: justify
+  overflow: hidden
+  position: relative
+
+  .tab-contents
+    position: relative
+    -webkit-transition: $tab-transition
+    -moz-transition: $tab-transition
+    -o-transition: $tab-transition
+    transition: $tab-transition
+
+    .tab-content 
+      position: relative
+      margin: 16px
+      float: left
+      overflow-y: auto
+      min-height: 300px
+      
+      .content-block 
+        border: solid 1px #0051A4
+        padding: 8px
+        & + .content-block 
+          margin-top: 16px
+
+        #snow_white_strip 
+          left: 50%
+          margin: 8px -200px
+          position: relative
+        
+        #snow_white_intro 
+          text-align: center
+        
+        #home_play_button 
+          margin: 8px auto
+          padding: 8px
+          cursor: pointer
+          text-align: center
+          position: relative
+          background-color: $main-color-dark
+          border: 2px solid #000
+          border-radius: 8px
+          color: #000
+          font-weight: bold
+          width: 150px
+          &:hover 
+            background-color: $main-color
+            border-color: #FFF
+            color: #FFF
+
+        .logo 
+          width: 32px
+          height: 32px
+          padding-right: 10px
+          &#insa 
+            width: 60px
+        
+        .logo-ref 
+          line-height: 32px
+          vertical-align: top

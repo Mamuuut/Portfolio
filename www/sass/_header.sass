@@ -1,0 +1,68 @@
+
+@mixin portait
+  $width: 56px
+  $height: 75px
+  
+  margin: 2px 8px
+  width: $width
+  height: $height
+  background: url("../img/portrait.gif")
+  background-size: auto $height
+  
+.header
+  background-color: #000
+  height: 80px 
+  padding: 8px
+  
+  .header-left
+    position: absolute
+    width: 410px
+    padding-right: 200px
+    left: 0
+    cursor: pointer
+  
+    .portrait 
+      float: left
+      @include portait
+        
+    .title
+      position: relative
+      height: 71px
+  
+  &:hover 
+    .portrait::after
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      @include portait
+      background-position: -56px 0
+        
+  .header-icons
+    position: absolute
+    padding: 8px
+    right: 0
+    top: 0
+    
+    .header-icon 
+      float: right
+      color: #FFF
+      &:hover
+        color: $main-color
+      p 
+        color: inherit
+        margin: 0
+        width: 70px
+        font-size: 12px
+        text-align: center
+        text-decoration: underline
+        
+      .icon 
+        position: relative
+        width: 50px
+        height: 50px
+        padding-left: 10px
+        border: none
+        
+    .contact img  
+      margin-right: 10px

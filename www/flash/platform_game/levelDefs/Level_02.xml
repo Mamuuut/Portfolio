@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<level>
+	<width>2048</width>
+	<height>600</height>
+    <title>Double jump</title>
+    <nextLevel>Level_03</nextLevel>
+	<background>level_back</background>
+	
+	<scroller>
+        <scrollX>0</scrollX>
+        <scrollY>0</scrollY>
+    </scroller>
+    
+	<objects>
+		<object>
+			<className>ExitDoor</className>
+			<x>1958</x>
+			<y>482</y>
+		</object>
+	
+        <object>
+            <className>PinocchioObject</className>
+            <x>100</x>
+            <y>474</y>
+        </object>
+		
+        <!-- Lava -->
+		<object>
+			<className>LavaObject</className>
+			<width>2048</width>
+			<x>0</x>
+			<y>540</y>
+		</object>
+        
+		<!-- Floor -->
+		<object>
+			<className>GroundObject</className>
+			<width>256</width>
+			<height>40</height>
+			<x>0</x>
+			<y>530</y>
+		</object>
+		<object>
+			<className>GroundRepeatObject</className>
+			<width>256</width>
+			<height>30</height>
+			<x>0</x>
+			<y>570</y>
+		</object>
+		<object>
+			<className>GroundObject</className>
+			<width>256</width>
+			<height>40</height>
+			<x>512</x>
+			<y>530</y>
+		</object>
+		<object>
+			<className>GroundRepeatObject</className>
+			<width>256</width>
+			<height>30</height>
+			<x>512</x>
+			<y>570</y>
+		</object>
+		<object>
+			<className>GroundObject</className>
+			<width>512</width>
+			<height>40</height>
+			<x>1536</x>
+			<y>530</y>
+		</object>
+		<object>
+			<className>GroundRepeatObject</className>
+			<width>512</width>
+			<height>30</height>
+			<x>1536</x>
+			<y>570</y>
+		</object>
+        		
+        <!-- Roof -->
+		<object>
+			<className>GroundObject</className>
+			<width>2048</width>
+			<height>40</height>
+			<x>0</x>
+			<y>80</y>
+            <yFlip>true</yFlip>
+		</object>
+		<object>
+			<className>GroundRepeatObject</className>
+			<width>2048</width>
+			<height>80</height>
+			<x>0</x>
+			<y>0</y>
+            <yFlip>true</yFlip>
+		</object>
+		
+		<!-- Left Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>600</height>
+			<x>0</x>
+			<y>0</y>
+            <xFlip>true</xFlip>
+		</object>
+		
+		<!-- Right Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>600</height>
+			<x>2008</x>
+			<y>0</y>
+		</object>
+	</objects>
+	
+</level>

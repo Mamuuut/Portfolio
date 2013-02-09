@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<level>
+	<width>1024</width>
+	<height>2048</height>
+    <title>Going up</title>
+    <nextLevel>Level_06</nextLevel>
+	<background>level_back</background>
+	
+	<scroller>
+        <scrollX>0</scrollX>
+        <scrollY>2048</scrollY>
+    </scroller>
+    
+	<objects>
+		<object>
+			<className>ExitDoor</className>
+			<x>934</x>
+			<y>464</y>
+		</object>
+	
+        <object>
+            <className>PinocchioObject</className>
+            <x>100</x>
+            <y>1900</y>
+        </object>
+
+		<object>
+			<className>GroundObject</className>
+			<width>512</width>
+			<height>40</height>
+			<x>512</x>
+			<y>1560</y>
+		</object>
+		
+		<object>
+			<className>GroundObject</className>
+			<width>512</width>
+			<height>40</height>
+			<x>0</x>
+			<y>1024</y>
+		</object>
+		
+		<object>
+			<className>GroundObject</className>
+			<width>512</width>
+			<height>40</height>
+			<x>512</x>
+			<y>512</y>
+		</object>
+        
+		<object>
+			<className>ElevatorObject</className>
+			<width>256</width>
+			<x>256</x>
+			<y>1560</y>
+			<yMin>1560</yMin>
+			<yMax>1952</yMax>
+		</object>
+
+		<object>
+            <className>ElevatorObject</className>
+			<width>256</width>
+			<x>256</x>
+			<y>512</y>
+			<yMin>512</yMin>
+			<yMax>968</yMax>
+		</object>
+
+		<object>
+			<className>DwarfObject</className>
+			<x>600</x>
+			<y>1900</y>
+		</object>
+
+		<object>
+			<className>DwarfObject</className>
+			<x>600</x>
+			<y>1468</y>
+		</object>
+
+		<object>
+			<className>DwarfObject</className>
+			<x>600</x>
+			<y>420</y>
+		</object>
+        
+        <object>
+			<className>UturnTrigger</className>
+			<width>20</width>
+			<height>2048</height>
+			<x>520</x>
+			<y>0</y>
+		</object>
+        
+        <object>
+			<className>UturnTrigger</className>
+			<width>20</width>
+			<height>2048</height>
+			<x>940</x>
+			<y>0</y>
+		</object>
+
+		<!-- Roof -->
+		<object>
+			<className>GroundObject</className>
+			<width>1024</width>
+			<height>40</height>
+			<x>0</x>
+			<y>0</y>
+            <yFlip>true</yFlip>
+		</object>
+		
+		<!-- Floor -->
+		<object>
+			<className>GroundObject</className>
+			<width>1024</width>
+			<height>40</height>
+			<x>0</x>
+			<y>2008</y>
+		</object>
+		
+		<!-- Left Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>2048</height>
+			<x>0</x>
+			<y>0</y>
+            <xFlip>true</xFlip>
+		</object>
+		
+		<!-- Right Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>2048</height>
+			<x>984</x>
+			<y>0</y>
+		</object>
+	</objects>
+	
+</level>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<level>
+	<width>800</width>
+	<height>1600</height>
+    <title>Wall jump</title>
+    <nextLevel>Level_04</nextLevel>
+	<background>level_back</background>
+	
+	<scroller>
+        <scrollX>0</scrollX>
+        <scrollY>1600</scrollY>
+    </scroller>
+    
+	<objects>
+		<object>
+			<className>ExitDoor</className>
+			<x>400</x>
+			<y>352</y>
+		</object>
+	
+        <object>
+            <className>PinocchioObject</className>
+            <x>400</x>
+            <y>1400</y>
+        </object>
+
+		<object>
+			<className>GroundObject</className>
+			<width>400</width>
+			<height>40</height>
+			<x>200</x>
+			<y>1200</y>
+		</object>
+		
+		<object>
+			<className>GroundObject</className>
+			<width>400</width>
+			<height>40</height>
+			<x>200</x>
+			<y>800</y>
+		</object>
+		
+		<object>
+			<className>GroundObject</className>
+			<width>400</width>
+			<height>40</height>
+			<x>200</x>
+			<y>400</y>
+		</object>
+		
+        <!-- Lava -->
+		<object>
+			<className>LavaObject</className>
+			<width>800</width>
+			<x>0</x>
+			<y>1540</y>
+		</object>
+
+		<!-- Roof -->
+		<object>
+			<className>GroundObject</className>
+			<width>800</width>
+			<height>40</height>
+			<x>0</x>
+			<y>0</y>
+            <yFlip>true</yFlip>
+		</object>
+		
+		<!-- Floor -->
+		<object>
+			<className>GroundObject</className>
+			<width>400</width>
+			<height>40</height>
+			<x>200</x>
+			<y>1520</y>
+		</object>
+		<object>
+			<className>GroundRepeatObject</className>
+			<width>400</width>
+			<height>40</height>
+			<x>200</x>
+			<y>1560</y>
+		</object>
+		
+		<!-- Left Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>1600</height>
+			<x>0</x>
+			<y>0</y>
+            <xFlip>true</xFlip>
+		</object>
+		
+		<!-- Right Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>1600</height>
+			<x>760</x>
+			<y>0</y>
+		</object>
+	</objects>
+	
+</level>

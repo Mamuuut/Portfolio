@@ -1,0 +1,32 @@
+
+.start-demo 
+  position: relative
+  width: 200px
+  height: 150px
+  float: left
+  margin-right: 16px
+  border: 4px solid #CCE5FF
+  cursor: pointer
+  &:hover
+    border: 4px solid $main-color
+
+  &::after 
+    content: ""
+    position: absolute
+    height: 40px
+    width: 40px
+    margin: -20px
+    top: 50%
+    left: 50%
+    background: url("../img/button_icons.png") #0051A4 no-repeat
+    border: 2px solid
+    border-radius: 8px
+
+  &:hover::after
+    background-color: $main-color
+    background-position: 0 -40px
+    border-color: #FFF
+
+@each $project in flash_physic_test_preview, fscot_preview, flash_game_preview, physic_test_preview
+  ##{$project}
+    background: no-repeat url('../img/#{$project}.jpg')

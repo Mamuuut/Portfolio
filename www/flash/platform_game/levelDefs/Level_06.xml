@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<level>
+	<width>720</width>
+	<height>2048</height>
+    <title>Final</title>
+	<background>level_back</background>
+	
+	<scroller>
+        <className>VerticalAutoScroller</className>
+        <scrollX>0</scrollX>
+        <scrollY>1648</scrollY>
+        <scrollSpeed>3</scrollSpeed>
+    </scroller>
+    
+	<objects>	
+		<object>
+			<className>SnowWhiteObject</className>
+			<x>596</x>
+			<y>60</y>
+		</object>
+        
+        <object>
+            <className>PinocchioObject</className>
+            <x>100</x>
+            <y>1860</y>
+        </object>
+
+		<object>
+			<className>GroundObject</className>
+			<width>360</width>
+			<height>40</height>
+			<x>360</x>
+			<y>1560</y>
+		</object>
+		
+		<object>
+			<className>GroundObject</className>
+			<width>360</width>
+			<height>40</height>
+			<x>0</x>
+			<y>1024</y>
+		</object>
+		
+		<object>
+			<className>GroundObject</className>
+			<width>360</width>
+			<height>40</height>
+			<x>360</x>
+			<y>178</y>
+		</object>
+        
+		<object>
+			<className>ElevatorObject</className>
+			<width>180</width>
+			<x>180</x>
+			<y>1560</y>
+			<yMin>1560</yMin>
+			<yMax>1912</yMax>
+		</object>
+
+		<object>
+            <className>ElevatorObject</className>
+			<width>180</width>
+			<x>180</x>
+			<y>210</y>
+			<yMin>210</yMin>
+			<yMax>968</yMax>
+		</object>
+
+		<object>
+			<className>DwarfObject</className>
+			<x>500</x>
+			<y>1820</y>
+		</object>
+
+		<object>
+			<className>DwarfObject</className>
+			<x>500</x>
+			<y>1468</y>
+		</object>
+
+		<object>
+			<className>DwarfObject</className>
+			<x>500</x>
+			<y>78</y>
+		</object>
+		
+        <object>
+			<className>UturnTrigger</className>
+			<width>20</width>
+			<height>2048</height>
+			<x>400</x>
+			<y>0</y>
+		</object>
+        
+        <object>
+			<className>UturnTrigger</className>
+			<width>20</width>
+			<height>2048</height>
+			<x>650</x>
+			<y>0</y>
+		</object>
+
+		<!-- Roof -->
+		<object>
+			<className>GroundObject</className>
+			<width>720</width>
+			<height>40</height>
+			<x>0</x>
+			<y>0</y>
+            <yFlip>true</yFlip>
+		</object>
+		
+		<!-- Floor -->
+		<object>
+			<className>GroundObject</className>
+			<width>720</width>
+			<height>40</height>
+			<x>0</x>
+			<y>1928</y>
+		</object>
+		<object>
+			<className>GroundRepeatObject</className>
+			<width>720</width>
+			<height>80</height>
+			<x>0</x>
+			<y>1968</y>
+		</object>
+		
+		<!-- Left Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>2048</height>
+			<x>0</x>
+			<y>0</y>
+            <xFlip>true</xFlip>
+		</object>
+		
+		<!-- Right Wall -->
+		<object>
+			<className>WallObject</className>
+			<width>40</width>
+			<height>2048</height>
+			<x>680</x>
+			<y>0</y>
+		</object>
+		
+        <!-- Lava -->
+		<object>
+			<className>LavaObject</className>
+			<scrollerObject>true</scrollerObject>
+			<width>720</width>
+			<x>0</x>
+			<y>2048</y>
+		</object>
+	</objects>
+	
+</level>

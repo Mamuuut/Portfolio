@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Curriculum Vitae - Mathieu Delaunay</title>
+
+		<meta name="description" content="Mathieu Delaunay CV" />
+		<meta name="author" content="Mathieu Delaunay">
+        <meta name="keywords" content="cv, flash, computer programmer, video games, javascript, actionscript 3, berlin, job">
+        <meta name="owner" content="Mathieu Delaunay">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+
+        <link rel="shortcut icon" type="image/gif" href="img/pixel_blue.gif">
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <!--[if lt IE 9]>
+        	<link rel="stylesheet" href="css/ie_styles.css" type="text/css"/>
+		<![endif]-->
+
+		<script language="JavaScript" src="flash/platform_game/js/swfobject.js"></script>
+        
+        <script type="text/javascript" data-main="js/app/main" src="js/libs/require-jquery.js"></script>
+	</head>
+	<body>
+	    <div id="pixel_container"></div>
+	    
+		<div class="container" style="display: none">
+            
+            <!-- Header -->
+			<div class="header">
+				<div class="header-left">
+				    <div class="portrait"></div>
+					<img class="title" src="img/header.gif" alt="Mathieu Delaunay - Computer Programmer"/>
+				</div>
+				
+				<div class="header-icons">
+					<a class="header-icon" href="pdf/mathieu_delaunay_resume.pdf" target="_blank">
+                        <img class="icon" width="50" src="img/pdf_logo.gif" alt="PDF Version"/>
+    					<p i18n="header.icon.pdf"></p>
+					</a>
+					<a class="header-icon contact">
+					    <img class="icon" width="50" src="img/mail_icon.gif" alt="Contact"/>
+    					<p i18n="header.icon.contact"></p>
+					</a>
+				</div>
+			</div>
+			
+            <!-- Menu -->
+            <div class="separator"></div>
+            <div class="menu">
+            	<ul>
+	                <li class="menu-item" tab="home" i18n="menu.home"></li>
+	                <li class="menu-item" tab="work_experience" i18n="menu.work"></li>
+	                <li class="menu-item" tab="education" i18n="menu.education"></li>
+	                <li class="menu-item" tab="skills" i18n="menu.skills"></li>
+	                <li class="menu-item" tab="projects" i18n="menu.projects"></li>
+	                <li class="menu-item" tab="interests" i18n="menu.interests"></li>
+				</ul>
+				
+                <div id="langSelector">
+                    <div id="lang_fr" lang="fr" class="selected" alt="En Français" title="En Français"></div>
+                    <div id="lang_en" lang="en" alt="In English" title="In English"></div>
+                </div>
+                
+                <div style="clear:both"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+				<div class="tab-contents">
+				
+    				<div class="tab-content" id="home" >
+                        <div i18n="tab.home.intro" class="content-block"></div>
+                        <div id="home_play" style="display: none;" class="content-block">
+                            <img id="snow_white_strip" src="img/snow_white.jpg" />
+                            <p id="snow_white_intro" i18n="tab.home.snowwhite.intro"></p>
+                            <div id="home_play_button" i18n="tab.home.snowwhite.button"></div>
+                        </div>    
+    				</div>
+    				
+    				<div class="tab-content" id="work_experience" >
+    					<div class="content-block">
+                            <h2 i18n="tab.work.f4.title"></h2>
+    						<img src="img/f4_logo.png" alt="F4 Logo" class="logo"/>
+    						<a i18n="tab.work.f4.link" href="http://www.f4-group.com/FR/main.html" target="_blank" class="logo-ref"></a>
+    						<p i18n="tab.work.f4.content"></p>
+    					</div>
+                        <div class="content-block">
+                            <h2 i18n="tab.work.cea.title"></h2>
+    						<img src="img/cea_logo.gif" alt="CEA Logo" class="logo"/>
+    						<a i18n="tab.work.cea.link" href="http://www-list.cea.fr/gb/index_gb.html" target="_blank" class="logo-ref"></a>
+    						<p i18n="tab.work.cea.content"></p>
+    					</div>
+    				</div>
+    				
+    				<div class="tab-content" id="education" >
+                        <div class="content-block">
+        					<h2 i18n="tab.education.languages.title"></h2>
+        					<p i18n="tab.education.languages.content"></p>
+    					</div>
+    
+                        <div class="content-block">
+        					<h2 i18n="tab.education.trainings.title"></h2>
+        					<h3 i18n="tab.education.trainings.scrum.title"></h3>
+        					<a i18n="tab.education.trainings.scrum.link"href="http://www.scrum.org/psmoverview/" target="_blank"></a>
+        					<h3 i18n="tab.education.trainings.flex.title"></h3>
+        					<a i18n="tab.education.trainings.flex.link"href="http://www.baao.com/Formations/flex_developpement.html" target="_blank"></a>
+                        </div>
+    
+                        <div class="content-block">
+        					<h2 i18n="tab.education.school.title"></h2>
+        					<h3 i18n="tab.education.school.master.title"></h3>
+    						<img src="img/ini_logo.gif" alt="Master INI Logo" class="logo"/>
+    						<a i18n="tab.education.school.master.link" href="http://www.sc-epinal.uhp-nancy.fr/masterini/" target="_blank" class="logo-ref"></a>
+    						<p i18n="tab.education.school.master.content"></p>
+    
+        					<h3 i18n="tab.education.school.insa.title"></h3>
+    						<img id="insa" src="img/insa_logo.gif" alt="INSA Rennes Logo" class="logo"/>
+    						<a i18n="tab.education.school.insa.link" href="http://www.insa-rennes.fr/?LangueID=2" target="_blank" class="logo-ref"></a>
+    						<p i18n="tab.education.school.insa.content"></p>
+                        </div>
+    				</div>
+    				
+    				<div class="tab-content" id="skills" >
+                        <div class="content-block">
+        					<h2 i18n="tab.skills.languages.title"></h2>
+    						<p i18n="tab.skills.languages.content"></p>
+    					</div>
+    
+                        <div class="content-block">
+        					<h2 i18n="tab.skills.libraries.title"></h2>
+    						<p i18n="tab.skills.libraries.content"></p>
+    					</div>
+    
+                        <div class="content-block">
+        					<h2 i18n="tab.skills.softwares.title"></h2>
+    						<p i18n="tab.skills.softwares.content"></p>
+    					</div>
+    				</div>
+    				
+    				<div class="tab-content" id="projects" >
+                        <div class="content-block">
+                            <h2 i18n="tab.projects.flashphysictest.title"></h2>
+                            <div id="flash_physic_test_preview" class="start-demo"></div>
+                            <p>
+                                <a i18n="tab.projects.gitsrc" target="_blank" href="https://github.com/Mamuuut/MamutGame/tree/master/FlashGame/PhysicEngine" ></a>
+                            </p>
+                            <p i18n="tab.projects.flashphysictest.features"></p>
+                            <div style="clear: both;"></div>
+                        </div>
+    
+                        <div class="content-block">
+        					<h2 i18n="tab.projects.flashplatformgame.title"></h2>
+        					<div id="flash_game_preview" class="start-demo"></div>
+                            <p>
+                                <a i18n="tab.projects.gitsrc" target="_blank" href="https://github.com/Mamuuut/MamutGame/tree/master/FlashGame/PlatformGame/" ></a>
+                            </p>
+                            <p i18n="tab.projects.flashplatformgame.features"></p>
+                            <div style="clear: both;"></div>
+    					</div>
+    
+                        <div class="content-block">
+                            <h2 i18n="tab.projects.websitefscot.title"></h2>
+                            <a target="_blank" href="http://www.fscot.com/" >
+                                <div id="fscot_preview" class="start-demo"></div>
+                            </a>
+                            <p>
+                                <a i18n="tab.projects.websitefscot.link" target="_blank" href="http://www.fscot.com/" ></a>
+                            </p>
+                            <p i18n="tab.projects.websitefscot.features"></p>
+                            <div style="clear: both;"></div>
+                        </div>
+    
+                        <div class="content-block">
+                            <h2 i18n="tab.projects.javascriptphysic.title"></h2>
+                            <div id="physic_test_preview" class="start-demo"></div>
+                            <p>
+                                <a i18n="tab.projects.gitsrc" target="_blank" href="https://github.com/Mamuuut/MamutGame/tree/master/WebSite/CV/www/canvas/" ></a>
+                            </p>
+                            <p i18n="tab.projects.javascriptphysic.features"></p>
+                            <div style="clear: both;"></div>
+                        </div>
+    				</div>
+    				
+    				<div class="tab-content" id="interests" >
+	                    <div class="content-block">
+	    					<h2 i18n="tab.interests.title"></h2>
+	    					<p i18n="tab.interests.content"></p>
+						</div>
+					</div>
+
+                </div>
+			</div>
+			
+            <div class="separator"></div>
+            
+			<div class="footer">
+				<p class="copyright">
+					&copy; Copyright by Mathieu Delaunay
+				</p>
+			</div>
+		</div>
+
+        <div id="modal_container">
+            <div id="modal_background" ></div>
+            <div id="modal_close"></div>
+            <div id="swf_container" class="modal-content">
+                <div id="swf_div">
+                    <a href="http://get.adobe.com/flashplayer/"> <img src="img/flashplayer.gif" alt="Get Adobe Flash player" /> </a>
+                </div>
+            </div>
+            <div id="physic_test_container" class="modal-content"></div>
+        </div>
+	</body>
+</html>
