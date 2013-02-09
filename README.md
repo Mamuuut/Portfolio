@@ -2,4 +2,4 @@ Portfolio
 =========
 My online CV and portfolio
 
-mamut.delaunay.free.fr
+http://mamut.delaunay.free.fr/
